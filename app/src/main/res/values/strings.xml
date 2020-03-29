@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Android Base Project</string>
+    <string name="error_generic">Error</string>
+</resources>
