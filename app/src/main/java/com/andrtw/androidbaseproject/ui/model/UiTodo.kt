@@ -4,7 +4,7 @@ import androidx.annotation.DrawableRes
 import com.andrtw.androidbaseproject.ui.recyclerview.TodoRecyclerViewModel
 
 
-data class UITodo(
+data class UiTodo(
     val id: Int,
     val userId: Int,
     val title: String?,
@@ -13,5 +13,4 @@ data class UITodo(
 ) : TodoRecyclerViewModel {
 
     override val type: Int = TodoRecyclerViewModel.TYPE_TODO
-
 }

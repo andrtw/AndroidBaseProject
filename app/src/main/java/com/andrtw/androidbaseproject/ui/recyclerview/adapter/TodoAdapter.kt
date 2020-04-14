@@ -7,7 +7,7 @@ import androidx.annotation.LayoutRes
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.andrtw.androidbaseproject.R
-import com.andrtw.androidbaseproject.ui.model.UITodo
+import com.andrtw.androidbaseproject.ui.model.UiTodo
 import com.andrtw.androidbaseproject.ui.recyclerview.TodoRecyclerViewModel
 import com.andrtw.androidbaseproject.ui.recyclerview.TodoViewHolder
 import com.andrtw.androidbaseproject.ui.recyclerview.base.AbstractViewHolder
@@ -24,7 +24,7 @@ class TodoAdapter(
             oldItem: TodoRecyclerViewModel,
             newItem: TodoRecyclerViewModel
         ): Boolean = when {
-            oldItem is UITodo && newItem is UITodo -> oldItem.id == newItem.id
+            oldItem is UiTodo && newItem is UiTodo -> oldItem.id == newItem.id
             else -> oldItem.javaClass == newItem.javaClass
         }
 
